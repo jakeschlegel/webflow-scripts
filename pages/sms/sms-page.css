@@ -11,8 +11,9 @@
 #source-2:-webkit-autofill:hover,
 #source-2:-webkit-autofill:focus,
 #source-2:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px white inset !important;
-  -webkit-text-fill-color: #000 !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #000;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 #source-2:focus {

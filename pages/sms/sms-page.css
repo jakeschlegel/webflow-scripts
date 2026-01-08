@@ -12,7 +12,7 @@
 #source-2:-webkit-autofill:focus,
 #source-2:-webkit-autofill:active {
   -webkit-background-clip: text;
-  -webkit-text-fill-color: #000;
+  -webkit-text-fill-color: #fff;
   transition: background-color 5000s ease-in-out 0s;
 }
 

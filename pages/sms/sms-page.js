@@ -192,14 +192,15 @@ function initEmailPopup() {
   });
 
   popup.addEventListener('click', (e) => {
+    const closeBtn = e.target.closest('.sms_close');
+    if (closeBtn) {
+      closePopup();
+      return;
+    }
+
     const formWrapper = document.querySelector('.sms_popup-form-wrapper');
     if (!formWrapper.contains(e.target)) {
       closePopup();
     }
   });
-
-  const closeBtn = document.querySelector('.sms_close');
-  if (closeBtn) {
-    closeBtn.addEventListener('click', closePopup);
-  }
 }

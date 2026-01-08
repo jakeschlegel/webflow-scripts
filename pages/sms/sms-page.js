@@ -203,4 +203,17 @@ function initEmailPopup() {
       closePopup();
     }
   });
+
+  const openBtn = document.querySelector('.sms_popup-open');
+  if (openBtn) {
+    openBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      gsap.set(popup, { display: 'flex' });
+      gsap.to(popup, {
+        opacity: 1,
+        duration: 0.3,
+        ease: "power2.out"
+      });
+    });
+  }
 }

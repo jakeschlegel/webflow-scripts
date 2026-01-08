@@ -197,4 +197,9 @@ function initEmailPopup() {
       closePopup();
     }
   });
+
+  const closeBtn = document.querySelector('.sms_close');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closePopup);
+  }
 }

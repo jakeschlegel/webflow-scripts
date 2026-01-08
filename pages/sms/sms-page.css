@@ -1,0 +1,20 @@
+.sms-tab_bubble {
+  opacity: 0;
+}
+
+.sms_popup {
+  display: none;
+  opacity: 0;
+}
+
+#source-2:-webkit-autofill,
+#source-2:-webkit-autofill:hover,
+#source-2:-webkit-autofill:focus,
+#source-2:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+#source-2:focus {
+  outline: none;
+}

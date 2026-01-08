@@ -1,0 +1,19 @@
+
+cat > .gitignore << 'EOF'
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node (if you add build tools later)
+node_modules/
+npm-debug.log
+
+# Local testing
+.env
+.env.local
